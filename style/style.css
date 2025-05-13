@@ -207,11 +207,12 @@ img {
 
 /*RD*/
 
-@media (max-width:470px) {
+@media (max-width:998px) {
 
     /*contact*/
     .contact .contact h3 {
-        font-size: 1.5rem;
+        width: 100%;
+        font-size: 3.5rem;
     }
 }
 
@@ -278,11 +279,11 @@ img {
     }
 }
 
-@media (max-width:998px) {
+
+@media (max-width:470px) {
 
     /*contact*/
     .contact .contact h3 {
-        width: 100%;
-        font-size: 3.5rem;
+        font-size: 1.5rem;
     }
 }
