@@ -1,0 +1,258 @@
+/*utility classes*/
+.container {
+    padding: 1rem 5rem;
+    margin-bottom: 2rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.d-hidden {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bg-light {
+    background-color: var(--secondary-color);
+}
+
+.bg-dark {
+    background-color: var(--primary-color);
+
+}
+
+.bg-gray {
+    background-color: var(--gray-color);
+}
+
+.text-xsm {
+    font-size: 1rem;
+}
+
+.text-sm {
+    font-size: 1.5rem;
+}
+
+.text-md {
+    font-size: 2.5rem;
+}
+
+.text-lg {
+    font-size: 3.5rem;
+}
+
+.text-xlg {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--primary-color);
+
+}
+
+.text-gray {
+    color: var(--gray-color);
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
+
+.btn, .input {
+    border: 0.08rem solid var(--primary-color);
+    border-radius: 1.5rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn-dark, .input-dark {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-light, .input-light {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    opacity: 0.90;
+}
+
+
+@media (max-width:768px) {
+    .d-flex {
+        flex-wrap: wrap;
+    }
+}
+
+.move-down {
+    animation-name: moveDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.move-up {
+    animation-name: moveUp;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.move-left {
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.move-right {
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.scale-up {
+    animation-name: scaleUp;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(50%);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translatex(50%);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translatex(-50%);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1.2);
+    }
+}

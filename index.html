@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Furniture" />
+    <meta name="description" content="E-commerce landing page" />
+    <title>Furniture Store</title>
+    <link rel="icon" href="" type="image/icon type" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!--style-->
+    <link rel="stylesheet" href="./style/utilities.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <!--slider style-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar container d-flex bg-light">
+            <div class="logo capitalize text-sm">
+                <a href="#">
+                    <h1>modulive.</h1>
+                </a>
+            </div>
+            <!--
+        <input type="checkbox" class="bar-icon d-hidden text-lg" id="bar-icon">
+        <label for="bar-icon" class="bar-icon d-hidden"><i class="fa-solid fa-bars"></i></label>
+        -->
+            <ul class="links d-flex bg-light text-center capitalize text-xsm">
+                <li class="my-1"><a href="#products">our products</a></li>
+                <li class="my-1"><a href="#about">about us</a></li>
+                <li class="my-1"><a href="#contact">contact us</a></li>
+            </ul>
+            <ul class="icons d-flex bg-light">
+                <li><a href="cart.html"><img src="./asset/cart.svg" /></a></li>
+                <li><a href="login.html"><img src="./asset/user.svg" /></a></li>
+                <li class="bar-icon d-hidden"><img src="./asset/bars.svg" /></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main my-5">
+        <section class="hero container bg-light">
+            <div class="heading text-center py-3 scale-up">
+                <h1 class="capitalize text-lg">transform <img src="./asset/hero4.png" alt=""> your space
+                    <br> with <img src="./asset/hero6.png" alt=""> suitable
+                    furniture
+                </h1>
+            </div>
+            <div class="images d-grid">
+                <div>
+                    <img src="./asset/hero.jpg" alt="">
+                </div>
+                <div class="bg-gray">
+                    <img src="./asset/hero8.jpeg">
+                    <div class="d-grid p-1">
+                        <h4 class="capitalize">muffin chair</h4>
+                        <p>$126.00</p>
+                        <div class="d-flex">
+                            <img src="./asset/rate-half.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray">
+                    <img src="./asset/hero7.jpg">
+                    <div class="d-grid p-1">
+                        <h4 class="capitalize">elite chair</h4>
+                        <p>$150.00</p>
+                        <div class="d-flex">
+                            <img src="./asset/rate-half.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                            <img src="./asset/rate.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats container d-flex bg-light">
+            <div class="customers text-center move-down">
+                <h3 class="text-lg py-2">18k+</h3>
+                <p class="text-sm ">Happy and loyal customers buy out products</p>
+            </div>
+            <div class="sales text-center move-down">
+                <h3 class="text-lg py-2">700+</h3>
+                <p class="text-sm ">Products than we have created and sold on the market</p>
+            </div>
+            <div class="consumers text-center move-down">
+                <h3 class="text-lg py-2">95%</h3>
+                <p class="text-sm ">Customers who have purchased and next come back</p>
+            </div>
+        </section>
+
+        <section class="products container bg-light">
+            <div class="heading text-center py-3 scale-up">
+                <h2 class="capitalize text-md">our best quality products</h2>
+            </div>
+            <div class="filtering d-flex">
+                <button class="btn btn-dark capitalize">all</button>
+                <button class="btn capitalize">chair</button>
+                <button class="btn capitalize">sofa</button>
+                <button class="btn capitalize">cabinet</button>
+                <button class="btn capitalize">bed</button>
+            </div>
+            <div class="products d-grid py-4">
+                <div class="products-item bg-gray text-center p-1">
+                    <img src="./asset/product1.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">table</h4>
+                        <p>$066.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item bg-gray text-center p-1">
+                    <img src="./asset/product2.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">chair</h4>
+                        <p>$126.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item bg-gray text-center p-1">
+                    <img src="./asset/product3.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">cabinet</h4>
+                        <p>$138.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item bg-gray text-center p-1">
+                    <img src="./asset/product4.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">chair</h4>
+                        <p>$100.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item bg-gray text-center p-1">
+                    <img src="./asset/product5.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">chair</h4>
+                        <p>$86.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item bg-gray text-center p-1">
+                    <img src="./asset/product6.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">cabinet</h4>
+                        <p>$222.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about container d-flex bg-light">
+            <div class="image text-center">
+                <img src="./asset/about.png">
+            </div>
+            <div class="text">
+                <div class="py-3 move-left">
+                    <h2 class="py-1 capitalize text-md">Why choose us</h2>
+                    <p>Here are the reasons why Moduilve stands out as the ultimate choice in furniture solutions</p>
+                </div>
+                <ul>
+                    <li class="my-2">
+                        <hr>
+                        <div class="py-1 d-flex">
+                            <h4 class="text-sm move-left">Sustainability</h4>
+                            <button><img src="./asset/add.svg"></button>
+                        </div>
+                        <p class="d-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dicta,
+                            dolores, quisquam ut officiis natus inventore nam cumque placeat provident omnis nemo rem!
+                        </p>
+                    </li>
+                    <li class="my-2">
+                        <hr>
+                        <div class="py-1 d-flex">
+                            <h4 class="text-sm move-left">Unrivaled quality</h4>
+                            <button><img src="./asset/add.svg"></button>
+                        </div>
+                        <p class="d-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam alias
+                            aliquid quae accusamus atque fugiat praesentium.</p>
+                    </li>
+                    <li class="my-2">
+                        <hr>
+                        <div class="py-1 d-flex">
+                            <h4 class="text-sm move-left">Unmatched variety</h4>
+                            <button><img src="./asset/add.svg"></button>
+                        </div>
+                        <p class="d-hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum veniam
+                            voluptates voluptatibus, sequi blanditiis, aliquid possimus dolores aliquam!</p>
+                    </li>
+                    <li class="my-2">
+                        <hr>
+                        <div class="py-1 d-flex">
+                            <h4 class="text-sm move-left">Legacy of excellence</h4>
+                            <button><img src="./asset/add.svg"></button>
+                        </div>
+                        <p class="d-hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, ducimus
+                            aut. Sed officia dolores, consequatur doloribus ullam voluptas iure corrupti impedit.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="products swiper mySwiper container bg-light">
+            <div class="heading d-flex p-3 ">
+                <h2 class="capitalize text-md move-right">may you also like</h2>
+                <button class="btn capitalize">see all</button>
+                <!--<button class="btn swiper-button-next capitalize"></button>
+                <button class="btn swiper-button-prev capitalize"></button>-->
+            </div>
+
+            <div class="products swiper-wrapper d-grid py-4">
+                <div class="products-item swiper-slide bg-gray text-center p-1">
+                    <img src="./asset/product1.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">table</h4>
+                        <p>$066.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item swiper-slide bg-gray text-center p-1">
+                    <img src="./asset/product2.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">chair</h4>
+                        <p>$126.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item swiper-slide bg-gray text-center p-1">
+                    <img src="./asset/product3.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">cabinet</h4>
+                        <p>$138.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item swiper-slide bg-gray text-center p-1">
+                    <img src="./asset/product4.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">chair</h4>
+                        <p>$100.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item swiper-slide bg-gray text-center p-1">
+                    <img src="./asset/product5.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">chair</h4>
+                        <p>$86.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+                <div class="products-item swiper-slide bg-gray text-center p-1">
+                    <img src="./asset/product6.jpg">
+                    <div class="d-flex">
+                        <h4 class="capitalize text-sm">cabinet</h4>
+                        <p>$222.00</p>
+                        <button class="btn btn-dark capitalize">show</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <section class="contact container bg-light">
+            <div class="contact p-5">
+                <h3 class="capitalize py-3 text-lg text-light move-down">when we create furniture, we strive for the
+                    finest
+                    quality.</h3>
+                <button class="btn btn-light  my-1 capitalize">Contact now!</button>
+            </div>
+        </section>
+        <section class="newsletter container bg-light">
+            <div class="newslette text-center">
+                <h4 class="capitalize py-3 text-md  scale-up">subscribe to our newsletter and<br> grab <b
+                        class="text-lg">30%
+                        OFF</b></h4>
+                <form class="d-flex">
+                    <input type="text" class="input my-1" placeholder="Your Email.." />
+                    <input type="submit" class="btn btn-dark capitalize my-1" value="subscribe">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer container bg-dark">
+            <div class="links d-flex">
+                <ul class="text-light">
+                    <li class="capitalize text-sm my-2">service</li>
+                    <li class="capitalize my-1">legal notice</li>
+                    <li class="capitalize">data protection</li>
+                </ul>
+                <ul class="text-light">
+                    <li class="capitalize text-sm my-2">newsletter</li>
+                    <li class="capitalize my-1">enter email address</li>
+                    <li class="capitalize">sign up</li>
+                </ul>
+                <div class="my-2">
+                    <a>
+                        <h1 class="capitalize text-md text-light">modulive.</h1>
+                    </a>
+                </div>
+                <ul class="text-light">
+                    <li class="capitalize text-sm my-2">connect</li>
+                    <li class="capitalize my-1">instagram</li>
+                    <li class="capitalize">facebook</li>
+                </ul>
+                <ul class="text-light">
+                    <li class="capitalize text-sm my-2">contact</li>
+                    <li class="capitalize my-1">12 b street, estern alberta</li>
+                    <li class="capitalize">global@modulive.com</li>
+                </ul>
+            </div>
+            <hr class="line text-light my-2">
+            <div class="other-links d-flex my-2">
+                <div class="my-1">
+                    <p class="capitalize text-light">&copy; copyright 2024. Moduilve all rights reserved.</p>
+                </div>
+                <ul class="d-flex text-light my-1">
+                    <li class="capitalize">terms of services</li>
+                    <li class="capitalize">privacy policy</li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script/script.js"></script>
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/slider.js"></script>
+
+</body>
+
+</html>
