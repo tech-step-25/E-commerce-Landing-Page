@@ -29,7 +29,6 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    font: inherit;
     cursor: pointer;
 }
 
@@ -40,10 +39,8 @@ ul {
 button,
 input {
     font: inherit;
-    color: inherit;
     background: none;
     border: none;
-    appearance: none;
 }
 
 img {
@@ -64,35 +61,6 @@ img {
     animation-name: scaleUp;
     animation-duration: 0.1s;
 }
-
-.navbar .links.open {
-    width: 100%;
-    padding: 2rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    box-shadow: -1px 20px 20px -10px #e1e1e11c;
-}
-
-/*@media (max-width:768px) {
-    .links {
-        display: none;
-    }
-    .bar-icon {
-        display: block;
-    }
-    #bar-icon {
-        visibility: hidden;
-    }
-    .bar-icon:checked~.links {
-        width: 100%;
-        padding: 2rem;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        box-shadow: -1px 20px 20px -10px #e1e1e11c;
-    }
-}*/
 
 /*hero*/
 .hero img, .hero .images div {
@@ -216,7 +184,37 @@ img {
     }
 }
 
-@media (max-width:788px) {
+@media (max-width:768px) {
+    /*navbar*/
+
+    /*
+    .links {
+        display: none;
+    }
+    .bar-icon {
+        display: block;
+    }
+    #bar-icon {
+        visibility: hidden;
+    }
+    .bar-icon:checked~.links {
+        width: 100%;
+        padding: 2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: -1px 20px 20px -10px #e1e1e11c;
+    }
+    */
+
+    .navbar .links {
+        width: 100%;
+        padding: 2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: -1px 20px 20px -10px #e1e1e11c;
+    }
 
     /*hero*/
     .hero .heading img:nth-child(1) {
