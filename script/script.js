@@ -1,12 +1,10 @@
-const mQ = window.matchMedia("(max-width:768px)");
-const mQ1 = window.matchMedia("(max-width:470px)");
+const mQ = window.matchMedia("(max-width:820px)");
 const links = document.querySelector(".links");
 const barIcon = document.querySelector(".bar-icon");
 const heedings = document.querySelectorAll(".text-lg");
 const mediumText = document.querySelectorAll(".text-md");
 const smallText = document.querySelectorAll(".text-sm");
 var isClicked = true;
-var isMatched = "";
 
 function changeScreenWidth() {
   if (mQ.matches) {
@@ -17,13 +15,7 @@ function changeScreenWidth() {
     barIcon.classList.replace("d-hidden", "d-block");
 
     /* text -> md */
-    heedings.forEach((e) =>
-      e.classList.replace(
-        isMatched.match("t") ? "text-sm" : "text-lg",
-        "text-md"
-      )
-    );
-    isMatched = "f";
+    heedings.forEach((e) => e.classList.replace("text-lg", "text-md"));
 
     /* text -> sm */
     mediumText.forEach((e) => e.classList.replace("text-md", "text-sm"));
@@ -37,32 +29,13 @@ function changeScreenWidth() {
     barIcon.classList.replace("d-block", "d-hidden");
 
     /* text -> lg */
-    heedings.forEach((e) => {
-      e.classList.replace(
-        isMatched.match("f") ? "text-md" : "text-sm",
-        "text-lg"
-      );
-    });
-    isMatched = "";
+    heedings.forEach((e) => e.classList.replace("text-md", "text-lg"));
 
     /* text -> md */
     mediumText.forEach((e) => e.classList.replace("text-sm", "text-md"));
 
     /* text -> sm */
     smallText.forEach((e) => e.classList.replace("text-xsm", "text-sm"));
-  }
-}
-
-function changeScreenWidth1() {
-  /* text -> sm*/
-  if (mQ1.matches) {
-    heedings.forEach((e) =>
-      e.classList.replace(
-        isMatched.match("f") ? "text-md" : "text-lg",
-        "text-sm"
-      )
-    );
-    isMatched = "t";
   }
 }
 
@@ -80,8 +53,6 @@ function clickBarIcon() {
 }
 
 changeScreenWidth();
-changeScreenWidth1();
 
 mQ.addEventListener("change", changeScreenWidth);
-mQ1.addEventListener("change", changeScreenWidth1);
 barIcon.addEventListener("click", clickBarIcon);
