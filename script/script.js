@@ -3,10 +3,10 @@ const mQ1 = window.matchMedia("(max-width:470px)");
 const links = document.querySelector(".links");
 const barIcon = document.querySelector(".bar-icon");
 const heedings = document.querySelectorAll(".text-lg");
-const text = document.querySelectorAll(".text-md");
-const text1 = document.querySelectorAll(".text-sm");
+const mediumText = document.querySelectorAll(".text-md");
+const smallText = document.querySelectorAll(".text-sm");
 var isClicked = true;
-var isMatched = false;
+var isMatched = true;
 
 function changeScreenWidth() {
   if (mQ.matches) {
@@ -16,25 +16,27 @@ function changeScreenWidth() {
 
     /* text */
     if (mQ1.matches) {
-      isMatched = true;
       heedings.forEach((e) => e.classList.replace("text-lg", "text-sm"));
-    } else {
       isMatched = false;
+    } else {
       heedings.forEach((e) => e.classList.replace("text-lg", "text-md"));
+      isMatched = true;
     }
-    text.forEach((e) => e.classList.replace("text-md", "text-sm"));
-    text1.forEach((e) => e.classList.replace("text-sm", "text-xsm"));
+    mediumText.forEach((e) => e.classList.replace("text-md", "text-sm"));
+    smallText.forEach((e) => e.classList.replace("text-sm", "text-xsm"));
   } else {
+    /*navbar*/
     //block -> in case after clicking baricon
     links.classList.replace(isClicked ? "d-hidden" : "d-block", "d-flex");
     barIcon.classList.replace("d-block", "d-hidden");
 
     /* text */
     heedings.forEach((e) => {
-      e.classList.replace(isMatched ? "text-sm" : "text-md", "text-lg");
+      e.classList.replace(isMatched ? "text-md" : "text-sm", "text-lg");
     });
-    text.forEach((e) => e.classList.replace("text-sm", "text-md"));
-    text1.forEach((e) => e.classList.replace("text-xsm", "text-sm"));
+
+    mediumText.forEach((e) => e.classList.replace("text-sm", "text-md"));
+    smallText.forEach((e) => e.classList.replace("text-xsm", "text-sm"));
   }
 }
 
@@ -54,6 +56,7 @@ changeScreenWidth();
 mQ.addEventListener("change", () => {
   changeScreenWidth();
 });
+
 barIcon.addEventListener("click", () => {
   clickBarIcon();
 });
