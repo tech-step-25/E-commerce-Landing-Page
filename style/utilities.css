@@ -191,12 +191,6 @@
 }
 
 
-@media (max-width:768px) {
-    .d-flex {
-        flex-wrap: wrap;
-    }
-}
-
 .move-down {
     animation-name: moveDown;
     animation-duration: 2s;
