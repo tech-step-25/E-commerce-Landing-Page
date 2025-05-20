@@ -1,4 +1,4 @@
-const mQ = window.matchMedia("(max-width:820px)");
+const mQ = window.matchMedia("(max-width:768px)");
 const links = document.querySelector(".links");
 const barIcon = document.querySelector(".bar-icon");
 const heedings = document.querySelectorAll(".text-lg");
