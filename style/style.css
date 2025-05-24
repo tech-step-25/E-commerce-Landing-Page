@@ -93,6 +93,11 @@ img {
     gap: 0.1rem;
 }
 
+/*stats*/
+.stats div {
+    width:33%;
+}
+
 /*products*/
 .products .filtering.d-flex {
     justify-content: center;
