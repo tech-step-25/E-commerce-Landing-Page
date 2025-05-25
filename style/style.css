@@ -77,8 +77,9 @@ img {
     height: 3rem;
 }
 
-.hero .images {
+.hero .images.d-grid {
     grid-template-columns: 5fr 1fr;
+    gap: 2.5rem;
 }
 
 .hero .images div:nth-child(1) {
@@ -86,7 +87,7 @@ img {
 }
 
 .hero .images .d-flex {
-    gap: 0.02rem;
+    gap: 0;
 }
 
 .hero .images .d-grid {
@@ -246,6 +247,10 @@ img {
     /*stats*/
     .stats.d-flex {
         justify-content: center;
+    }
+
+    .stats div {
+        width: 100%;
     }
 
     /*products*/

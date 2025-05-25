@@ -1,6 +1,7 @@
-const mQ = window.matchMedia("(max-width:768px)");
+const mQ = window.matchMedia("(max-width:820px)");
 const links = document.querySelector(".links");
 const barIcon = document.querySelector(".bar-icon");
+const largeText = document.querySelectorAll(".text-xlg");
 const heedings = document.querySelectorAll(".text-lg");
 const mediumText = document.querySelectorAll(".text-md");
 const smallText = document.querySelectorAll(".text-sm");
@@ -13,6 +14,9 @@ function changeScreenWidth() {
 
     /*barIcon links -> block*/
     barIcon.classList.replace("d-hidden", "d-block");
+
+    /* text -> lg */
+    largeText.forEach((e) => e.classList.replace("text-xlg", "text-lg"));
 
     /* text -> md */
     heedings.forEach((e) => e.classList.replace("text-lg", "text-md"));
@@ -27,6 +31,9 @@ function changeScreenWidth() {
     links.classList.replace(isClicked ? "d-hidden" : "d-block", "d-flex");
     /*barIcon -> hidden*/
     barIcon.classList.replace("d-block", "d-hidden");
+
+    /* text -> xlg */
+    largeText.forEach((e) => e.classList.replace("text-lg", "text-xlg"));
 
     /* text -> lg */
     heedings.forEach((e) => e.classList.replace("text-md", "text-lg"));
