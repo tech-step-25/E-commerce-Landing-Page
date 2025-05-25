@@ -231,7 +231,7 @@ img {
         height: 1.5rem;
     }
 
-    .hero .images {
+    .hero .images.d-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
