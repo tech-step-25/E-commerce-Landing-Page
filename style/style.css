@@ -95,7 +95,7 @@ img {
 
 /*stats*/
 .stats div {
-    width:25%;
+    width: 24%;
 }
 
 /*products*/
@@ -118,11 +118,12 @@ img {
 }
 
 .products .products .products-item .btn {
-    padding: 0.75rem;
+    margin-left: 3rem;
+    width: 4.5rem;
 }
 
-.products .products .d-flex {
-    justify-content: space-around;
+.products .products .d-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .products-item:hover {
