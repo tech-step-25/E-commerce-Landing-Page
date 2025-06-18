@@ -60,7 +60,6 @@ img {
 .navbar li:hover {
     animation-name: scaleUp;
     animation-duration: 1s;
-    animation-timing-function: ease-out;
 }
 
 /*hero*/
